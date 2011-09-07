@@ -68,7 +68,7 @@ done
 # Validate input parameters
 avatar_size=$(askifempty "$avatar_size" "$AVATAR_SIZE" "Enter the size for the avatar:")
 qrcode_size=$(askifempty "$qrcode_size" "$QRCODE_SIZE" "Enter the size for the QR code:")
-source_file=$(askifempty "$1" "$SOURCE_FILE" "Enter the file name path with the list of emails:")
+source_file=$(askifempty "$1" "$BASEDIR/$SOURCE_FILE" "Enter the file name path with the list of emails:")
 
 # Prepare the output directories
 mkdir -p "$DIR_OUTPUT"
